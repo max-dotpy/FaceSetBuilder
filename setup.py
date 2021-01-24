@@ -2,8 +2,8 @@ from setuptools import setup
 
 
 setup(
-  name = 'FaceSetMaker',
-  packages = ['FaceSetMaker'],
+  name = 'FaceSetBuilder',
+  packages = ['FaceSetBuilder'],
   version = '1',
   license='MIT',
   description = 'App to cluster faces from a dataset directory.',
@@ -32,7 +32,7 @@ setup(
   ],
   entry_points={
         'console_scripts': [
-            'FaceSetMaker= FaceSetMaker.main:start',
+            'FaceSetBuilder= FaceSetBuilder.main:start',
         ],
   },
 )
