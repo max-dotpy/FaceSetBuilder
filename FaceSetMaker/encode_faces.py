@@ -1,7 +1,7 @@
 from imutils import paths
 import cv2
 from face_recognition import face_locations, face_encodings
-from constants import *
+from FaceSetMaker.constants import *
 from pickle import dumps
 from os import mkdir
 from os.path import join

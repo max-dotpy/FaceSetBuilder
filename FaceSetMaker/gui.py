@@ -1,5 +1,5 @@
 from tkinter import *
-from myTkinter import myButton
+from FaceSetMaker.myTkinter import myButton
 
 
 class Front(Frame):

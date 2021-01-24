@@ -5,8 +5,10 @@ import pickle
 import cv2
 from os import mkdir, rename
 from os.path import join
-from constants import *
-from PIL import Image, ImageTk
+from FaceSetMaker.constants import *
+from PIL.Image import open as open_
+from PIL.Image import ANTIALIAS
+from PIL.ImageTk import PhotoImage
 from tkinter import IntVar
 
 
@@ -84,9 +86,9 @@ def cluster(app):
         # show the montage and ask for the subject's name
         app.show_square()
 
-        raw_img = Image.open(path_montage)
-        img = raw_img.resize((app.w, app.w), Image.ANTIALIAS)
-        img_tk = ImageTk.PhotoImage(img)
+        raw_img = open_(path_montage)
+        img = raw_img.resize((app.w, app.w), ANTIALIAS)
+        img_tk = PhotoImage(img)
 
         app.master.img_tk = img_tk
         app.square.create_image(0, 0, anchor="nw", image=img_tk)

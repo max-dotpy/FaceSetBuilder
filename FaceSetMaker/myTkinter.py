@@ -1,5 +1,6 @@
 from tkinter import Label
-from PIL import Image, ImageTk
+from PIL.Image import open
+from PIL.ImageTk import PhotoImage
 
 
 class myButton(Label):
@@ -16,8 +17,8 @@ class myButton(Label):
         self.configure(relief="raised")
 
         if "img" in my_kw:
-            image = Image.open(my_kw["img"])
-            photo = ImageTk.PhotoImage(image)
+            image = open(my_kw["img"])
+            photo = PhotoImage(image)
             if "img_bg" in my_kw:
                 self.configure(image=photo, bg=my_kw["bg"])
             else:
