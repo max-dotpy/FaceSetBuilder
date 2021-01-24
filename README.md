@@ -7,3 +7,5 @@ Install through pip: pip install FaceSetBuilder
 Open terminal and change directory to where you want to save the output.
 
 Execute through terminal the command: FaceSetBuilder
+
+Video showing how it works: https://streamable.com/z4vzdd
