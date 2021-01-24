@@ -1,10 +1,11 @@
-from distutils.core import setup
+#from distutils.core import setup
+from setuptools import setup
 
 
 setup(
   name = 'FaceSetMaker',
   packages = ['FaceSetMaker'],
-  version = '0',
+  version = '1',
   license='MIT',
   description = 'App to cluster faces from a dataset directory.',
   author = 'Massimo Cosimo',
